@@ -1,0 +1,320 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+}
+html {
+    scroll-behavior: smooth;
+  }
+  .a {
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
+  }
+/* Navigation bar */
+#navbar{
+     display: flex;
+   align-items: center; 
+    position: fixed;
+    height: 70px;
+    width: 100%;
+    top: 0px;
+    background-color: red;
+    z-index: 999;
+}
+
+/* logo and image */
+#logo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+margin: 9px 6px;
+color: white;
+}
+#logo img{
+    height: 50px;
+    margin: 6px 15px;
+}
+/* navbar list styling */
+ #navbar ul{
+    display: flex;
+    height: 60px;
+}
+#menu {
+    display: none;
+    height: 40px;
+    width: 40px;
+}
+#navbar ul li a{
+    display: block;
+    padding: 3px 20px;
+    border-radius: 16px;
+    text-decoration: none;
+    margin: 23px 14px;
+    color: white;
+    transition: border-color 0.66s ease-out, font-size 0.3s ease-out;
+ }  
+ #navbar ul li a:hover{
+ color: white;
+font-weight: 700;
+cursor: pointer;
+  transition: border-color 0s;
+  border-color: black;
+ }
+ 
+ #navbar ul li {
+     list-style: none;
+     font-size: 1.2rem;
+     /* color: black; */
+ 
+ }  
+ #home{
+    display: flex;
+    flex-direction: column;
+    background-color: blue;
+    color: #ffffff;
+    padding: 14px;
+    margin-top: 70px;
+    
+}
+
+#home p{
+    margin: 2px 5px;
+}
+
+#product{
+    margin: 21px 30px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    
+}
+#product .box{
+    border-radius: 28px;
+    border: 2px solid black;
+    padding: 34px;
+    margin: 6px 45px;
+    color: #000000;
+    position: relative;
+  top: 0;
+  transition: top ease 0.5s;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+#product .box:hover {
+    top: -10px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+#product .box img{
+    height: 160px;
+    display: block;
+    margin: auto;
+}
+.services-container{
+    height: 605px;
+    width: 100%;
+    background-color: green;
+}
+
+
+h1 {
+    color: black;
+text-align: center;
+font-size: 2.4rem;
+    font-weight: bold; 
+}
+
+
+/*product*/
+
+.bottom-details{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 7px;
+      background-color: grey;
+  }
+
+  .mrow {
+    width: 100%;
+    display: flex;
+    flex-grow: 1; 
+      flex-shrink: 1; 
+      flex-basis: 0;
+  }
+  .column {
+    display: flex;
+    margin: 14px;
+    flex-direction: column;
+  }
+  .text_box {
+    display: flex;
+    flex-direction: row;
+  }
+  .text_content {
+    color: #ffffff;
+    background-color: #000000;
+    margin-right: 14px;
+    padding: 7px;
+  }
+/*footer*/
+footer{
+    background: black;
+    color: wheat;
+    padding: 9px 20px;
+}
+ /* utility classes */
+ .h-primary{
+    color: #ffffff;
+     font-size: 2.4rem;
+     padding:12px;
+ }
+ .center{
+     text-align: center;
+     /* font-size: 1.3rem; */
+ }
+ .h-secondry{
+     font-size: 2.3rem;
+     padding: 12px;
+ }
+ .h2-secondry{
+    font-size: 1.3rem;
+    padding: 4px;
+    width:220px;
+}
+
+@media only screen and (max-width: 600px) {
+ 
+
+    #navbar{
+        display: flex;
+      align-items: center; 
+      flex-direction: column;
+       position: fixed;
+       height: auto;
+       width: 100%;
+       top: 0px;
+       background-color: red;
+       z-index: 999;
+   }
+
+   /* logo and image */
+   #logo{
+       display: flex;
+       flex-direction: row;
+       width: 100%;
+       justify-content: space-between;
+   padding-left: 14px;
+   padding-right: 14px;
+   color: white;
+   }
+   #logo img{
+       height: 40px;
+       margin: 6px 7px;
+   }
+   /* navbar list styling */
+    #navbar ul{
+       display: none;
+       flex-direction: column;
+       height: auto;
+   }
+   #menu {
+       display: block;
+       height: 25px;
+       width: 40px;
+   }
+   #navbar ul li a{
+       display: block;
+       padding: 3px 20px;
+       border-radius: 16px;
+       text-decoration: none;
+       margin: 23px 14px;
+       color: white;
+       transition: border-color 0.66s ease-out, font-size 0.3s ease-out;
+    }  
+    #navbar ul li a:hover{
+    color: white;
+   font-weight: 700;
+   cursor: pointer;
+     transition: border-color 0s;
+     border-color: black;
+    }
+    
+    #navbar ul li {
+        list-style: none;
+        font-size: 1.2rem;
+        /* color: black; */
+    
+    }  
+
+    .bottom-details{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 7px;
+        margin-top: -24px;
+        background-color: grey;
+    }
+  
+    .mrow {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1; 
+        flex-shrink: 1; 
+        flex-basis: 0;
+    }
+    .column {
+      display: flex;
+      margin: 14px;
+      flex-direction: column;
+    }
+    .text_box {
+      display: flex;
+      flex-direction: column;
+    }
+    .text_content {
+      color: #ffffff;
+      background-color: #000000;
+      margin-bottom: 14px;
+      padding: 7px;
+    }
+
+    #product{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        
+    }
+    #product .box{
+        border-radius: 28px;
+        border: 2px solid black;
+        padding: 7px;
+        margin: 14px;
+        color: #000000;
+        position: relative;
+      top: 0;
+      transition: top ease 0.5s;
+        background-color: #ffffff;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        transition: 0.3s;
+    }
+    #product .box:hover {
+        top: -7px;
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+      }
+    #product .box img{
+        height: 100px;
+        display: block;
+        margin: auto;
+    }
+    .services-container{
+        width: 100%;
+        background-color: green;
+        height: auto;
+    }
+  }
